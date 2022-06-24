@@ -1,0 +1,24 @@
+{
+  "name": "name-formatter-js",
+  "version": "1.0.0",
+  "description": "change formmate name for all type data in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbadri/nameFormatter.git"
+  },
+  "keywords": [
+    "name",
+    "formmater",
+    "js"
+  ],
+  "author": "MRBadri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrbadri/nameFormatter/issues"
+  },
+  "homepage": "https://github.com/mrbadri/nameFormatter#readme"
+}
