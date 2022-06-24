@@ -22,7 +22,7 @@ This library help you to convert formate name of data.
         from: "snack_case" ,
         to: "camelCase"
     }
-})
+});
 ```
 
 ####  Parameters
@@ -35,7 +35,7 @@ This library help you to convert formate name of data.
 ## Examples
 
 ```javascript
-import nameFormatter from 'name-formatter-js'
+import nameFormatter from 'name-formatter-js';
 
 // test data
 const myData = {
@@ -45,7 +45,7 @@ const myData = {
             file_link: "https://example.com"
         }
     ]
-}
+};
 
 // call function
 nameFormatter({
@@ -54,16 +54,16 @@ nameFormatter({
         from: "snack_case" ,
         to: "camelCase"
     }
-})
+});
 
-// function return
-{
-    fileType: "image" ,
-    list: [
-        {
-            fileLink: "https://example.com"
-        }
-    ]
-}
+// function return:
+// {
+//    fileType: "image" ,
+//    list: [
+//        {
+//            fileLink: "https://example.com"
+//        }
+//    ]
+// }
 
 ```
