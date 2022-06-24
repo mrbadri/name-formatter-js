@@ -1,6 +1,6 @@
 {
   "name": "name-formatter-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "change formmate name for all type data in js",
   "main": "index.js",
   "scripts": {
