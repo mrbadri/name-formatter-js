@@ -1,12 +1,12 @@
 const convertToCamelCase = require("./camelCase");
 const convertToSnackCase = require("./snackCase");
 
-function convert({ str, convertTo }) {
-  switch (convertTo) {
+function convert({ name, convert: { from, to } }) {
+  switch (to) {
     case "camelCase":
-      return convertToCamelCase(str);
+      return convertToCamelCase(name);
     case "snack_case":
-      return convertToSnackCase(str);
+      return convertToSnackCase(name);
 
     default:
       console.error("Please enter 'convertTo'");

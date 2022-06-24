@@ -1,16 +1,16 @@
-function convertToCamelCase(str) {
-  let newStr = "";
+function convertToCamelCase(name) {
+  let newname = "";
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === "_") {
+  for (let i = 0; i < name.length; i++) {
+    if (name[i] === "_") {
       i++;
-      if (str[i] && i - 1 !== 0) newStr += str[i].toLocaleUpperCase();
+      if (name[i]) newname += name[i].toLocaleUpperCase();
     } else {
-      newStr += str[i];
+      newname += name[i];
     }
   }
 
-  return newStr;
+  return newname;
 }
 
 module.exports = convertToCamelCase;

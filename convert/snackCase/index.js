@@ -1,17 +1,15 @@
-function convertToSnackCase(str) {
-  let newStr = "";
+function convertToSnackCase(name) {
+  let newname = "";
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === str[i].toLocaleUpperCase()) {
-      newStr += `_${str[i].toLowerCase()}`;
+  for (let i = 0; i < name.length; i++) {
+    if (name[i] === name[i].toLocaleUpperCase()) {
+      newname += `_${name[i].toLowerCase()}`;
     } else {
-      newStr += str[i];
+      newname += name[i];
     }
   }
 
-console.log("newStr", newStr);
-
-  return newStr;
+  return newname;
 }
 
 module.exports = convertToSnackCase;
