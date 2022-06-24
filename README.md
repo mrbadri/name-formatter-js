@@ -1,6 +1,6 @@
 # Name Formatter JS
 
-This library help you to convert formate name of data.
+This library help you to convert formate names of data.
 
 ## Installation
 
@@ -11,18 +11,18 @@ This library help you to convert formate name of data.
 ## Usage
 
 ####  Import Function
-```http
+```bash
   import nameFormatter from "name-formatter-js";
 ```
 ####  Call Function
-```http
+```bash
   nameFormatter({
     data: myData,
     convert: {
         from: "snack_case" ,
         to: "camelCase"
     }
-})
+});
 ```
 
 ####  Parameters
@@ -32,10 +32,10 @@ This library help you to convert formate name of data.
 |    data   | all Type | enter your data            |
 | from, to  | string   | `camelCase`, `snack_case`  |
 
-## Usage/Examples
+## Examples
 
 ```javascript
-import nameFormatter from 'name-formatter-js'
+import nameFormatter from 'name-formatter-js';
 
 // test data
 const myData = {
@@ -45,7 +45,7 @@ const myData = {
             file_link: "https://example.com"
         }
     ]
-}
+};
 
 // call function
 nameFormatter({
@@ -54,16 +54,16 @@ nameFormatter({
         from: "snack_case" ,
         to: "camelCase"
     }
-})
+});
 
-// function return
-{
-    fileType: "image" ,
-    list: [
-        {
-            fileLink: "https://example.com"
-        }
-    ]
-}
+// function return:
+// {
+//    fileType: "image" ,
+//    list: [
+//        {
+//            fileLink: "https://example.com"
+//        }
+//    ]
+// }
 
 ```
