@@ -1,6 +1,6 @@
 # Name Formatter JS
 
-This library help you to convert formate name of data.
+This library help you to convert formate names of data.
 
 ## Installation
 
