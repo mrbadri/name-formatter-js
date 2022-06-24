@@ -11,11 +11,11 @@ This library help you to convert formate name of data.
 ## Usage
 
 ####  Import Function
-```http
+```bash
   import nameFormatter from "name-formatter-js";
 ```
 ####  Call Function
-```http
+```bash
   nameFormatter({
     data: myData,
     convert: {
@@ -32,7 +32,7 @@ This library help you to convert formate name of data.
 |    data   | all Type | enter your data            |
 | from, to  | string   | `camelCase`, `snack_case`  |
 
-## Usage/Examples
+## Examples
 
 ```javascript
 import nameFormatter from 'name-formatter-js'
