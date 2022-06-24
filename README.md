@@ -1,10 +1,8 @@
 # Name Formatter JS
 
-This library help you to convert Formate name of data.
+This library help you to convert formate name of data.
 
 ## Installation
-
-Install with npm
 
 ```bash
   npm install name-formatter-js
@@ -13,7 +11,7 @@ Install with npm
 ## Usage/Examples
 
 ```javascript
-import nameFromatter from 'name-formatter-js'
+import nameFormatter from 'name-formatter-js'
 
 // test data
 const myData = {
@@ -25,8 +23,8 @@ const myData = {
     ]
 }
 
-
-nameFromatter({
+// call function
+nameFormatter({
     data: myData,
     convert: {
         from: "snack_case" ,
@@ -34,7 +32,7 @@ nameFromatter({
     }
 })
 
-// this function return
+// function return
 {
     fileType: "image" ,
     list: [
