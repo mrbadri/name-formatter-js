@@ -8,6 +8,8 @@ This library help you to convert formate names of data.
   npm install name-formatter-js
 ```
 
+
+
 ## Usage
 
 ####  Import Function
@@ -27,10 +29,14 @@ This library help you to convert formate names of data.
 
 ####  Parameters
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-|    data   | all Type | enter your data            |
-| from, to  | string   | `camelCase`, `snack_case`  |
+| Parameter    | Type     | Values                       |
+| :--------    | :------- | :-------------------------   |
+|    data      | All Type | Enter your data              |
+| convert.from | String   | `camelCase` or `snack_case`  |
+| convert.to   | String   | `camelCase` or `snack_case`  |
+
+
+
 
 ## Examples
 
