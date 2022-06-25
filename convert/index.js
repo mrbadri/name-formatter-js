@@ -5,7 +5,7 @@ function convert({ name, convert: { from, to } }) {
   switch (to) {
     case "camelCase":
       return convertToCamelCase(name);
-    case "snack_case":
+    case "snake_case":
       return convertToSnackCase(name);
 
     default:

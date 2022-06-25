@@ -21,7 +21,7 @@ This library help you to convert formate names of data.
   nameFormatter({
     data: myData,
     convert: {
-        from: "snack_case" ,
+        from: "snake_case" ,
         to: "camelCase"
     }
 });
@@ -32,8 +32,8 @@ This library help you to convert formate names of data.
 | Parameter    | Type     | Values                       |
 | :--------    | :------- | :-------------------------   |
 |    data      | All Type | Enter your data              |
-| convert.from | String   | `camelCase` or `snack_case`  |
-| convert.to   | String   | `camelCase` or `snack_case`  |
+| convert.from | String   | `camelCase` or `snake_case`  |
+| convert.to   | String   | `camelCase` or `snake_case`  |
 
 
 
@@ -57,7 +57,7 @@ const myData = {
 nameFormatter({
     data: myData,
     convert: {
-        from: "snack_case" ,
+        from: "snake_case" ,
         to: "camelCase"
     }
 });

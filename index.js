@@ -3,7 +3,7 @@ const conditions = require("./utility/conditions");
 
 function nameFormatter({
   data,
-  convert: { from = "snack_case", to = "camelCase" },
+  convert: { from = "snake_case", to = "camelCase" },
 }) {
   if (typeof data === "object") {
     for (const i in data) {

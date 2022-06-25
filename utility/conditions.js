@@ -6,7 +6,7 @@ function conditions({ name, convert: { from, to } }) {
       }
       return false;
 
-    case "snack_case":
+    case "snake_case":
       return name.includes("_");
   }
 }
