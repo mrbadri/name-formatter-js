@@ -1,4 +1,4 @@
-function convertToSnackCase(name) {
+function convertToSnakeCase(name) {
   let newname = "";
 
   for (let i = 0; i < name.length; i++) {
@@ -12,4 +12,4 @@ function convertToSnackCase(name) {
   return newname;
 }
 
-module.exports = convertToSnackCase;
+module.exports = convertToSnakeCase;
