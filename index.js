@@ -1,10 +1,8 @@
-const convert = require('./convert');
-const conditions = require('./utility/conditions');
+const convert = require("./convert");
+const conditions = require("./utility/conditions");
 
-function nameFormatter({ data, convert: { from = 'snake_case', to = 'camelCase' } }) {
-  console.log('data', data);
-
-  if (typeof data === 'object') {
+function nameFormatter({ data, convert: { from = "snake_case", to = "camelCase" } }) {
+  if (typeof data === "object") {
     for (const i in data) {
       if (!data[i] && data[i] !== false) return data;
 
@@ -20,12 +18,12 @@ function nameFormatter({ data, convert: { from = 'snake_case', to = 'camelCase' 
 
       data[newName] = nameFormatter({
         data: data[newName],
-        convert: { from, to },
+        convert: { from, to }
       });
     }
 
     return data;
-  } else if (typeof data === 'string') {
+  } else if (typeof data === "string") {
     return convert({ name: data, convert: { from, to } });
   }
 
