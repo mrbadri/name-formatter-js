@@ -2,33 +2,38 @@ const convert = require("./convert");
 const conditions = require("./utility/conditions");
 
 function nameFormatter({ data, convert: { from = "snake_case", to = "camelCase" } }) {
-  if (typeof data === "object") {
-    for (const i in data) {
-      if (!data[i] && data[i] !== false) return data;
+  switch (typeof data) {
+    case "string":
+      return convert({ name: data, convert: { from, to } });
 
-      // convert name
-      const newName = convert({ name: i, convert: { from, to } });
+    case "object":
+      for (const i in data) {
+        if (!data[i] && data[i] !== false) return data;
 
-      if (conditions({ name: i, convert: { from, to } })) {
-        // add new object
-        data = Object.assign(data, { [newName]: data[i] });
-        // delete old object
-        delete data[i];
+        // convert name
+        const newName = convert({ name: i, convert: { from, to } });
+
+        if (conditions({ name: i, convert: { from, to } })) {
+          // add new object
+          data = Object.assign(data, { [newName]: data[i] });
+          // delete old object
+          delete data[i];
+        }
+
+        // check type data[newName] for continue convert
+        if (typeof data[newName] === "object") {
+          data[newName] = nameFormatter({
+            data: data[newName],
+            convert: { from, to }
+          });
+        }
       }
 
-      data[newName] = nameFormatter({
-        data: data[newName],
-        convert: { from, to }
-      });
-    }
+      return data;
 
-    return data;
-  } else if (typeof data === "string") {
-    return convert({ name: data, convert: { from, to } });
+    default:
+      return data;
   }
-
-  // if type of data is not object
-  return data;
 }
 
 module.exports = nameFormatter;
