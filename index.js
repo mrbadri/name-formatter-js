@@ -8,7 +8,7 @@ function nameFormatter({ data, convert: { from = "snake_case", to = "camelCase" 
 
     case "object":
       for (const i in data) {
-        if (!data[i] && data[i] !== false) return data;
+        if (data[i] === undefined) return data;
 
         // convert name
         const newName = convert({ name: i, convert: { from, to } });
